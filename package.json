@@ -1,0 +1,33 @@
+{
+  "name": "nodjsmongodb",
+  "version": "1.0.0",
+  "description": "Página web en nodejs y mongodb, se realizará el despliegue en heroku y mongo dbatlas",
+  "main": "index.js",
+  "scripts": {
+    "dev": "babel-node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HaroldIB/NODJSMONGODB.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HaroldIB/NODJSMONGODB/issues"
+  },
+  "homepage": "https://github.com/HaroldIB/NODJSMONGODB#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.3.1",
+    "socket.io": "^4.4.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "nodemon": "^2.0.15"
+  }
+}
