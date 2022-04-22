@@ -4,7 +4,7 @@
   "description": "Página web en nodejs y mongodb, se realizará el despliegue en heroku y mongo dbatlas",
   "main": "index.js",
   "scripts": {
-    "dev": "babel-node src/index.js"
+    "dev": "nodemon src/index.js --exec babel-node"
   },
   "repository": {
     "type": "git",
