@@ -4,7 +4,9 @@
   "description": "Página web en nodejs y mongodb, se realizará el despliegue en heroku y mongo dbatlas",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js --exec babel-node"
+    "dev": "nodemon src/index.js --exec babel-node",
+    "build": "babel src -d dist --copy-files",
+    "start": "node dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,7 @@
   },
   "homepage": "https://github.com/HaroldIB/NODJSMONGODB#readme",
   "dependencies": {
+    "@babel/runtime": "^7.17.9",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "mongoose": "^6.3.1",
@@ -27,6 +30,7 @@
     "@babel/cli": "^7.17.6",
     "@babel/core": "^7.17.9",
     "@babel/node": "^7.16.8",
+    "@babel/plugin-transform-runtime": "^7.17.0",
     "@babel/preset-env": "^7.16.11",
     "nodemon": "^2.0.15"
   }
